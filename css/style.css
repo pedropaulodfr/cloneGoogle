@@ -1,37 +1,37 @@
 body{
     background-color: #ffffff;
+    overflow: hidden;
 }
 .container{
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 }
 .cabecalho-container{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     margin: 20px 20px 0px 0px;
 }
 .cabecalho-container a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
     padding: 0px 0px 0px 15px;
     text-decoration: none;
 }
 .cabecalho-container a:hover{
     text-decoration: underline;
 }
+.cabecalho-container a:visited{
+    color: rgba(0, 0, 0, 0.87);
+}
 .bxs-grid{
     font-size: 24px;
     color: rgb(95, 99, 104);
     margin: -4px 15px 0px 30px;
     cursor: pointer;
-}
-.bxs-grid:hover{
-    width: 40px;
-    background-color: #dfe1e5;
-    border-radius: 50%;
 }
 .bxs-user{
     font-size: 32px;
@@ -115,4 +115,54 @@ input, textarea, select {
 }
 .search-buttons input[type="submit"]:hover{
     box-shadow: 0px .5px 2px 0px rgba(0,0,0,0.2)
+}
+
+footer{
+    background-color: #f2f2f2;
+}
+footer h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(112, 117, 122);
+    padding-left: 30px;
+}
+.local-content{
+    display: flex;
+    align-items: center;
+    height: 47px;
+    border-bottom: solid 1px #dadce0;
+}
+.links-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 46px;
+    padding: 0px 100px 0px 80px;
+}
+.links-rodape a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(112, 117, 122);
+    padding-left: 30px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.links-rodape a:hover{
+    text-decoration: underline;
+}
+.links-termos-privacidade-configuracoes a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    body{
+        overflow-y: auto;
+    }
+    .container{
+        height:86vh;
+    }
+    .links-rodape{
+        flex-direction: column;
+        padding: 20px 0px 20px 0px;
+    }
 }
