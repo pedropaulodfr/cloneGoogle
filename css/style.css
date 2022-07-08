@@ -1,0 +1,118 @@
+body{
+    background-color: #ffffff;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.cabecalho-container{
+    display: flex;
+    justify-content: right;
+    margin: 20px 20px 0px 0px;
+}
+.cabecalho-container a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 0px 0px 0px 15px;
+    text-decoration: none;
+}
+.cabecalho-container a:hover{
+    text-decoration: underline;
+}
+.bxs-grid{
+    font-size: 24px;
+    color: rgb(95, 99, 104);
+    margin: -4px 15px 0px 30px;
+    cursor: pointer;
+}
+.bxs-grid:hover{
+    width: 40px;
+    background-color: #dfe1e5;
+    border-radius: 50%;
+}
+.bxs-user{
+    font-size: 32px;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: -9px 0px 0px 15px;
+    background-color: rgb(95, 99, 104);
+    cursor: pointer;
+}
+.logo-container{
+    position: relative;
+    top: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 27vh;
+}
+.search-container input[type="text"]{
+    position: relative;
+    width: 582px;
+    height: 44px;
+    border-radius: 30px;
+    border: solid 1px #dfe1e5;
+    padding-left: 60px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.search-container input[type="text"]:hover{
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+    
+}
+.search-text{
+    position: relative;
+}
+.bx-search{
+    position: absolute;
+    top: 15px;
+    left: 23px;
+    font-size: 17px;
+    color: rgb(154, 160, 166);
+}
+.bxs-keyboard{
+    position: absolute;
+    top: 15px;
+    left: 560px;
+    font-size: 20px;
+    color: rgb(154, 160, 166);
+    cursor: pointer;
+}
+.bxs-microphone{
+    position: absolute;
+    top: 12px;
+    left: 600px;
+    font-size: 25px;
+    color: rgb(154, 160, 166);
+    cursor: pointer;
+}
+input, textarea, select {
+    outline: 0;
+}
+.search-buttons{
+    margin-top: 30px;
+}
+.search-buttons input[type="submit"]{
+    width: 140px;
+    height: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(60, 64, 67);
+    background-color: rgb(248, 249, 250);
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+}
+.search-buttons input[type="submit"]:hover{
+    box-shadow: 0px .5px 2px 0px rgba(0,0,0,0.2)
+}
