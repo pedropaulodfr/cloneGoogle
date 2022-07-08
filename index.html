@@ -44,7 +44,7 @@
 
 
             <div class="search-buttons">
-                <input type="submit" value="Pesquisa Google">
+                <input type="submit" value="Pesquisa Google" onclick="go()">
                 <input type="submit" value="Estou com sorte">
             </div>
 
@@ -70,5 +70,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var inputSearch = document.querySelector("#text-area");
+        inputSearch.focus();
+
+        inputSearch.addEventListener("keypress", (e) =>{
+            if (e.key == 'Enter') {
+                go();
+            }
+        });
+
+        function go() {
+            window.location.href = "https://www.google.com/search?q=" + String(inputSearch.value);
+        }
+
+
+    </script>
+
 </body>
 </html>
