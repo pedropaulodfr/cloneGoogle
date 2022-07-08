@@ -66,9 +66,9 @@ body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.search-container input[type="text"]:hover{
+.search-container input[type="text"]:hover, .search-text:hover{
+    border-radius: 30px;
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
-    
 }
 .search-text{
     position: relative;
@@ -85,7 +85,7 @@ body{
     top: 15px;
     left: 560px;
     font-size: 20px;
-    color: rgb(154, 160, 166);
+    color: rgb(112, 117, 122);
     cursor: pointer;
 }
 .bxs-microphone{
@@ -94,6 +94,10 @@ body{
     left: 600px;
     font-size: 25px;
     color: rgb(154, 160, 166);
+    background: linear-gradient(157deg, rgba(66,133,244,1) 51%, rgba(251,188,5,1) 55%, rgba(234,67,53,1) 69%, rgba(52, 168, 83, 1) 40%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     cursor: pointer;
 }
 input, textarea, select {
